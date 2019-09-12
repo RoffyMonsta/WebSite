@@ -171,16 +171,25 @@
             .logo{
                 display:none;
             }
+            main{
+                margin-top: 15%;
+            }
         }
         @media screen and (max-width: 536px){
             footer .copyright{
                 white-space: nowrap;
                 margin: 0 auto;
             }
+            main{
+                margin-top: 20%;
+            }
         }
         @media screen and (max-width: 480px){
             main .container{
                 width: 100%;
+            }
+            main{
+                margin-top: 30%;
             }
         }
         @media screen and (max-width: 375px){
@@ -188,6 +197,9 @@
                 white-space: normal;
                 text-align: center;
                 width:100%;
+            }
+            main{
+                margin-top: 40%;
             }
             #DarkTheme, #LightTheme {
                 font-size: 12px;
