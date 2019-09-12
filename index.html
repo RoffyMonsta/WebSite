@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Назва сторінки -->
+    <title>Jack White</title>
+</head>
+<body>
+    <header id="header"> 
+      <!-- Контейнер для контенту -->
+    <div class="container">
+      <!-- Логотип -->
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+        <!-- Кнопка темної теми -->
+        <div class="theme" id="DarkTheme">Темна тема</div>
+        <!-- Реалізація меню -->
+        <div class="menu">
+            <ul>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="#">Музика</a>
+                  <!-- Випадаюче меню -->
+                    <ul class="submenu">
+                        <li><a href="#">Play music</a></li>
+                        <li><a href="#">Soundcloud</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Концерти</a></li>
+                <li><a href="#">Біографія</a></li>
+            </ul>
+        </div>
+        <!-- Кнопка світлої теми -->
+        <div class="theme" id="LightTheme">Світла тема</div>
+    </div>
+        
+    </header>
+    <main>
+            <div class="container">
+              <!-- Відкрити та закрити форму -->
+                <div class="registrate"><span id="plus">+</span><span id="press">Натисніть на плюс для відкриття форми</span></div>
+                    <!-- Форма -->
+                <form method="POST" id="reg_form" name="myform" onsubmit="return isFull()">
+                        <p>
+                          <label>Звернення</label>
+                          <label>
+                            <!-- На вибір стать -->
+                            <input type="radio" name="title" value="mr">
+                            Пан
+                          </label>
+                          <label>
+                            <input type="radio" name="title" value="mrs">
+                            Пані
+                          </label>
+                        </p>
+                        <p>
+                          <!-- Ввести ім'я -->
+                          <label>Ім'я</label>
+                          <input type="text" name="first_name" id="name">
+                        </p>
+                        <p>
+                          <!-- Ввести прізвище -->
+                          <label>Прізвище</label>
+                          <input type="text" name="last_name">
+                        </p>
+                        <p>
+                          <!-- Ввести пошту -->
+                          <label>Email</label>
+                          <input type="email" name="email">
+                        </p>
+                        <p>
+                          <!-- Ввести Телефон -->
+                          <label>Телефон</label>
+                          <input type="tel" name="phone" id="phone">
+                        </p>
+                        <p>
+                          <!-- Ввести пароль -->
+                          <label>Пароль</label>
+                          <input type="password" name="password" id="pass1">
+                        </p>
+                        <p>
+                          <!-- Підтвердити пароль -->
+                          <label>Підтвердіть пароль</label>
+                          <input type="password" name="password_confirm" id="pass2">
+                        </p>
+                        <p>
+                          <!-- Випадаючий список з назвами країн  -->
+                          <label>Країна</label>
+                          <select name="country">
+                            <option>Україна</option>
+                            <option>Франція</option>
+                            <option>Німеччина</option>
+                            <option>Італія</option>
+                            <option>Японія</option>
+                            <option>Росія</option>
+                            <option>США</option>
+                          </select>
+                        </p>
+                        <p>
+                          <label>
+                            <input type="checkbox" name="terms">
+                            Я погоджуюсь з <a href="#">правилами користування</a>
+                          </label>
+                        </p>
+                        <p>
+                          <!-- Кнопка підтвердження -->
+                          <input type="submit" value="Зареєструватися" id="reg">
+                        </p>
+                      </form>
+                      <!-- Таблиця -->
+                      <table border="1" id="tablemain">
+                        <caption>Квитки</caption>
+                        <!-- Рядок з заголовками -->
+                        <tr>
+                         <th>Місто</th>
+                         <th id="date">Дата</th>
+                         <th id="price">Ціна</th>
+                        </tr>
+                        <!-- стовпчики і рядки -->
+                        <tr><td>Чернівці</td><td>23 жовтня</td><td class="priced">200 грн</td></tr>
+                        <tr><td>Львів</td><td>25 жовтня</td><td class="priced">250 грн</td></tr>
+                        <tr><td>Одеса</td><td>28 жовтня</td><td class="priced">250 грн</td></tr>
+                        <tr><td>Харків</td><td>32 жовтня</td><td class="priced">250 грн</td></tr>
+                        <tr><td>Київ</td><td>40 жовтня</td><td class="priced">300 грн</td></tr>
+                       </table>
+                       <!-- Вставка Youtube відео як віджет -->
+                       <iframe  src="https://www.youtube.com/embed/fJHIHmAoQLE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="metel"></iframe>
+            </div>
+            
+    </main>
+    <footer id="footer">
+            <div class="container">
+              <!-- Підпис -->
+              <span class="copyright">©Ломовацький Антон</span>
+            </div>
+    </footer>
+    <!-- Під'єдную скрипти -->
+    <script src="./js/CheckForm.js" defer></script>
+    <script src="./js/OpenForm.js" defer></script>
+    <script src="./js/Events.js" defer></script>
+    <script src="./js/DarkTheme.js" defer></script>
+</body>
+</html>
